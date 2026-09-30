@@ -1,0 +1,8 @@
+# TEST FILE - OpenSSH server
+HostKey /etc/ssh/ssh_host_ed25519_key
+HostKey /etc/ssh/ssh_host_rsa_key
+KexAlgorithms sntrup761x25519-sha512@openssh.com,curve25519-sha256,diffie-hellman-group1-sha1
+Ciphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-cbc,3des-cbc
+MACs hmac-sha2-512-etm@openssh.com,hmac-md5
+PubkeyAcceptedAlgorithms ssh-ed25519,rsa-sha2-512,ssh-rsa
+PasswordAuthentication yes

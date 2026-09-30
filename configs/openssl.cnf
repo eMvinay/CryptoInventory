@@ -1,0 +1,12 @@
+# TEST FILE - OpenSSL config with system-wide policy
+openssl_conf = init
+[init]
+ssl_conf = ssl_sect
+[ssl_sect]
+system_default = sys
+[sys]
+MinProtocol = TLSv1.2
+CipherString = DEFAULT@SECLEVEL=1
+[req]
+default_bits = 2048
+default_md = sha256

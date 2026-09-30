@@ -1,0 +1,1829 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:182fe0c2-e4f2-45c2-a73c-3fe54784fc07",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-09-30T06:15:19.350046+00:00",
+    "component": {
+      "type": "application",
+      "name": "CryptoInventory-POC"
+    }
+  },
+  "components": [
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:16c03a95565512a8",
+      "name": "CN=CI client,O=CryptoInventory Test",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/pki-chain/client.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=CI client,O=CryptoInventory Test",
+          "issuerName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:42+00:00",
+          "notValidAfter": "2027-09-30T06:12:42+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:b42d5ff81c17",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/pki-chain/client.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 3072,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:acfeeb24462e0652",
+      "name": "CN=CI codesign,O=CryptoInventory Test",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/pki-chain/codesign.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=CI codesign,O=CryptoInventory Test",
+          "issuerName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:43+00:00",
+          "notValidAfter": "2027-09-30T06:12:43+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:dee6582509cd",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/pki-chain/codesign.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 3072,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:d6fae5c44df0bb16",
+      "name": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/pki-chain/fullchain.pem"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:42+00:00",
+          "notValidAfter": "2027-11-01T06:12:42+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "pem"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:15aec483b2167d96",
+      "name": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/pki-chain/fullchain.pem"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:42+00:00",
+          "notValidAfter": "2036-09-27T06:12:42+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "pem"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:16ce89fb1ee964d3",
+      "name": "CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/pki-chain/fullchain.pem"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:41+00:00",
+          "notValidAfter": "2046-09-25T06:12:41+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "pem"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:15aec483b2167d96",
+      "name": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/pki-chain/intermediate-ca.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:42+00:00",
+          "notValidAfter": "2036-09-27T06:12:42+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:7b7b6239fe4a",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/pki-chain/intermediate-ca.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 3072,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:16ce89fb1ee964d3",
+      "name": "CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/pki-chain/root-ca.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:41+00:00",
+          "notValidAfter": "2046-09-25T06:12:41+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:7502189eafc1",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/pki-chain/root-ca.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 4096,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:d6fae5c44df0bb16",
+      "name": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/pki-chain/server-rsa2048.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:42+00:00",
+          "notValidAfter": "2027-11-01T06:12:42+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:2952f19f7e7d",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/pki-chain/server-rsa2048.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 2048,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:041a4f409d022f71",
+      "name": "CN=CI smime,O=CryptoInventory Test",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/pki-chain/smime.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=CI smime,O=CryptoInventory Test",
+          "issuerName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:44+00:00",
+          "notValidAfter": "2027-09-30T06:12:44+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:bb50b445eeea",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/pki-chain/smime.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 3072,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:00ba0671af62f980",
+      "name": "CN=ecdsa-prime256v1.ci.test,O=CryptoInventory Test",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/ecdsa/ecdsa-prime256v1.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=ecdsa-prime256v1.ci.test,O=CryptoInventory Test",
+          "issuerName": "CN=ecdsa-prime256v1.ci.test,O=CryptoInventory Test",
+          "notValidBefore": "2026-09-30T06:12:44+00:00",
+          "notValidAfter": "2027-09-30T06:12:44+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:e36787520bba",
+      "name": "EC-secp256r1 private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/ecdsa/ecdsa-prime256v1.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 256,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:b042ba53c24fb1bf",
+      "name": "CN=ecdsa-secp384r1.ci.test,O=CryptoInventory Test",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/ecdsa/ecdsa-secp384r1.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=ecdsa-secp384r1.ci.test,O=CryptoInventory Test",
+          "issuerName": "CN=ecdsa-secp384r1.ci.test,O=CryptoInventory Test",
+          "notValidBefore": "2026-09-30T06:12:44+00:00",
+          "notValidAfter": "2027-09-30T06:12:44+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:8f04f5556661",
+      "name": "EC-secp384r1 private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/ecdsa/ecdsa-secp384r1.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 384,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:74509b038c4d87d3",
+      "name": "CN=ecdsa-secp521r1.ci.test,O=CryptoInventory Test",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/ecdsa/ecdsa-secp521r1.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=ecdsa-secp521r1.ci.test,O=CryptoInventory Test",
+          "issuerName": "CN=ecdsa-secp521r1.ci.test,O=CryptoInventory Test",
+          "notValidBefore": "2026-09-30T06:12:44+00:00",
+          "notValidAfter": "2027-09-30T06:12:44+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:913b99472a70",
+      "name": "EC-secp521r1 private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/ecdsa/ecdsa-secp521r1.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 521,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:d6fae5c44df0bb16",
+      "name": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/formats/chain-der.p7b"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:42+00:00",
+          "notValidAfter": "2027-11-01T06:12:42+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "p7b"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:15aec483b2167d96",
+      "name": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/formats/chain-der.p7b"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:42+00:00",
+          "notValidAfter": "2036-09-27T06:12:42+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "p7b"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:16ce89fb1ee964d3",
+      "name": "CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/formats/chain-der.p7b"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:41+00:00",
+          "notValidAfter": "2046-09-25T06:12:41+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "p7b"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:d6fae5c44df0bb16",
+      "name": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/formats/chain.p7b"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:42+00:00",
+          "notValidAfter": "2027-11-01T06:12:42+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "p7b"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:15aec483b2167d96",
+      "name": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/formats/chain.p7b"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:42+00:00",
+          "notValidAfter": "2036-09-27T06:12:42+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "p7b"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:16ce89fb1ee964d3",
+      "name": "CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/formats/chain.p7b"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:41+00:00",
+          "notValidAfter": "2046-09-25T06:12:41+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "p7b"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:7e822ad09ab9",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/formats/server-aes256.p12"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 2048,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:d6fae5c44df0bb16",
+      "name": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/formats/server-aes256.p12"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:42+00:00",
+          "notValidAfter": "2027-11-01T06:12:42+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "p12"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:15aec483b2167d96",
+      "name": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/formats/server-aes256.p12"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:42+00:00",
+          "notValidAfter": "2036-09-27T06:12:42+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "p12"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:af0ab0304fe0",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/formats/server-aes256.pfx"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 2048,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:d6fae5c44df0bb16",
+      "name": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/formats/server-aes256.pfx"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:42+00:00",
+          "notValidAfter": "2027-11-01T06:12:42+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "pfx"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:15aec483b2167d96",
+      "name": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/formats/server-aes256.pfx"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:42+00:00",
+          "notValidAfter": "2036-09-27T06:12:42+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "pfx"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:e6afe5481c1d",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/formats/server-legacy-3des.pfx"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 2048,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:d6fae5c44df0bb16",
+      "name": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/formats/server-legacy-3des.pfx"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:42+00:00",
+          "notValidAfter": "2027-11-01T06:12:42+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "pfx"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:d6fae5c44df0bb16",
+      "name": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/formats/server.cer"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:42+00:00",
+          "notValidAfter": "2027-11-01T06:12:42+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "cer"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:d6fae5c44df0bb16",
+      "name": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/formats/server.der"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:42+00:00",
+          "notValidAfter": "2027-11-01T06:12:42+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "der"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:d6fae5c44df0bb16",
+      "name": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/formats/server.pem"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=app.ci.test,O=CryptoInventory Test,C=IN",
+          "issuerName": "CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",
+          "notValidBefore": "2026-09-30T06:12:42+00:00",
+          "notValidAfter": "2027-11-01T06:12:42+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "pem"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:eb4b46d47dfc",
+      "name": "EC-secp256r1 private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/csr/ec-p256.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 256,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:2188ea1b0a81e988",
+      "name": "CN=expired.ci.test,O=CryptoInventory Test WEAK",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/weak/expired.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=expired.ci.test,O=CryptoInventory Test WEAK",
+          "issuerName": "CN=expired.ci.test,O=CryptoInventory Test WEAK",
+          "notValidBefore": "2024-07-22T06:12:44+00:00",
+          "notValidAfter": "2026-08-31T06:12:44+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:835563832c13",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/weak/expired.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 2048,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:f85674515c289e76",
+      "name": "CN=expiring-in-7-days.ci.test,O=CryptoInventory Test WEAK",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/weak/expiring-in-7-days.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=expiring-in-7-days.ci.test,O=CryptoInventory Test WEAK",
+          "issuerName": "CN=expiring-in-7-days.ci.test,O=CryptoInventory Test WEAK",
+          "notValidBefore": "2025-10-07T06:12:44+00:00",
+          "notValidAfter": "2026-10-07T06:12:44+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:138e580bee85",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/weak/expiring-in-7-days.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 2048,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:17c8b2f08e049528",
+      "name": "CN=long-validity-10y.ci.test,O=CryptoInventory Test WEAK",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/weak/long-validity-10y.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=long-validity-10y.ci.test,O=CryptoInventory Test WEAK",
+          "issuerName": "CN=long-validity-10y.ci.test,O=CryptoInventory Test WEAK",
+          "notValidBefore": "2026-09-30T06:12:44+00:00",
+          "notValidAfter": "2036-09-27T06:12:44+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:1af5308d5deb",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/weak/long-validity-10y.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 2048,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:537dd118d528b938",
+      "name": "CN=md5.ci.test,O=CryptoInventory_Test_WEAK",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/weak/md5-signed.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=md5.ci.test,O=CryptoInventory_Test_WEAK",
+          "issuerName": "CN=md5.ci.test,O=CryptoInventory_Test_WEAK",
+          "notValidBefore": "2026-09-30T06:12:44+00:00",
+          "notValidAfter": "2027-09-30T06:12:44+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:5a0e7be9143a",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/weak/md5-signed.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 2048,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:82510432e303e3ed",
+      "name": "CN=no-san.ci.test,O=CryptoInventory Test WEAK",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/weak/no-san.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=no-san.ci.test,O=CryptoInventory Test WEAK",
+          "issuerName": "CN=no-san.ci.test,O=CryptoInventory Test WEAK",
+          "notValidBefore": "2026-09-30T06:12:44+00:00",
+          "notValidAfter": "2027-09-30T06:12:44+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:c0805eade53c",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/weak/no-san.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 2048,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:ecee1b32da61a614",
+      "name": "CN=not-yet-valid.ci.test,O=CryptoInventory Test WEAK",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/weak/not-yet-valid.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=not-yet-valid.ci.test,O=CryptoInventory Test WEAK",
+          "issuerName": "CN=not-yet-valid.ci.test,O=CryptoInventory Test WEAK",
+          "notValidBefore": "2026-10-30T06:12:44+00:00",
+          "notValidAfter": "2027-11-04T06:12:44+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:b6c44eacec7a",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/weak/not-yet-valid.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 2048,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:386c429b05a96857",
+      "name": "CN=rsa1024.ci.test,O=CryptoInventory_Test_WEAK",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/weak/rsa1024.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=rsa1024.ci.test,O=CryptoInventory_Test_WEAK",
+          "issuerName": "CN=rsa1024.ci.test,O=CryptoInventory_Test_WEAK",
+          "notValidBefore": "2026-09-30T06:12:44+00:00",
+          "notValidAfter": "2027-09-30T06:12:44+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:e5a3d5094702",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/weak/rsa1024.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 1024,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:7a0fa17d4cafb6df",
+      "name": "CN=sha1.ci.test,O=CryptoInventory_Test_WEAK",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/weak/sha1-signed.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=sha1.ci.test,O=CryptoInventory_Test_WEAK",
+          "issuerName": "CN=sha1.ci.test,O=CryptoInventory_Test_WEAK",
+          "notValidBefore": "2026-09-30T06:12:44+00:00",
+          "notValidAfter": "2027-09-30T06:12:44+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:e276b93195e7",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/weak/sha1-signed.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 2048,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:01a9f7463445be95",
+      "name": "CN=*.ci.test,O=CryptoInventory Test WEAK",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/weak/wildcard.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=*.ci.test,O=CryptoInventory Test WEAK",
+          "issuerName": "CN=*.ci.test,O=CryptoInventory Test WEAK",
+          "notValidBefore": "2026-09-30T06:12:44+00:00",
+          "notValidAfter": "2027-09-30T06:12:44+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:930fd9dba0a2",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/weak/wildcard.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 2048,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:1772bee4ec331b66",
+      "name": "CN=ed25519.ci.test,O=CryptoInventory Test",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/eddsa/ed25519.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=ed25519.ci.test,O=CryptoInventory Test",
+          "issuerName": "CN=ed25519.ci.test,O=CryptoInventory Test",
+          "notValidBefore": "2026-09-30T06:12:44+00:00",
+          "notValidAfter": "2027-09-30T06:12:44+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:899cf153e0d5",
+      "name": "Ed25519 private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/eddsa/ed25519.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 256,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:e6827a7a3250933b",
+      "name": "CN=ed448.ci.test,O=CryptoInventory Test",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/eddsa/ed448.crt"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=ed448.ci.test,O=CryptoInventory Test",
+          "issuerName": "CN=ed448.ci.test,O=CryptoInventory Test",
+          "notValidBefore": "2026-09-30T06:12:44+00:00",
+          "notValidAfter": "2027-09-30T06:12:44+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "crt"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:bda2d5759017",
+      "name": "Ed448 private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "certificates/eddsa/ed448.key"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 456,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:ceab569d0d01",
+      "name": "RSA public-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "ssh/authorized_keys"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "public-key",
+          "size": 3072,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:556490cd48e9",
+      "name": "EC-secp256r1 private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "ssh/id_ecdsa"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 256,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:cf28a925f49a",
+      "name": "EC-secp256r1 public-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "ssh/id_ecdsa.pub"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "public-key",
+          "size": 256,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:1a92c9444d51",
+      "name": "Ed25519 private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "ssh/id_ed25519"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 256,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:d08b786ffb46",
+      "name": "Ed25519 public-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "ssh/id_ed25519.pub"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "public-key",
+          "size": 256,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:88213624ea22",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "ssh/id_rsa"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 3072,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:983bec20eca6",
+      "name": "RSA public-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "ssh/id_rsa.pub"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "public-key",
+          "size": 3072,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:653adf29b8fe",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "ssh/id_rsa1024_WEAK"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 1024,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:5637d59eac10",
+      "name": "RSA public-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "ssh/id_rsa1024_WEAK.pub"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "public-key",
+          "size": 1024,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:9360767e0655",
+      "name": "DSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "keys/asymmetric/dsa1024-WEAK.pem"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 1024,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:5fab8269f435",
+      "name": "EC-secp256r1 private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "keys/asymmetric/ec-p256-sec1.pem"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 256,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:a34da65369c7",
+      "name": "EC-secp256k1 private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "keys/asymmetric/ec-secp256k1.pem"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 256,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:3a28e0c11194",
+      "name": "Ed25519 private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "keys/asymmetric/ed25519.pem"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 256,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:50f5b7651196",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "keys/asymmetric/rsa2048-pkcs1.pem"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 2048,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:dd3136a8a628",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "keys/asymmetric/rsa2048-pkcs8-encrypted.pem"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 2048,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:94bdccfe28fd",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "keys/asymmetric/rsa2048-pkcs8.der"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 2048,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:22fd3f2d0955",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "keys/asymmetric/rsa2048-pkcs8.pem"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 2048,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:ea69d215dff1",
+      "name": "RSA public-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "keys/asymmetric/rsa2048-public-pkcs1.pem"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "public-key",
+          "size": 2048,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:e88f028a38ac",
+      "name": "RSA public-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "keys/asymmetric/rsa2048-public.pem"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "public-key",
+          "size": 2048,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:6f254b8dcb3f",
+      "name": "RSA private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "keys/asymmetric/rsa4096-traditional-encrypted.pem"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 4096,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:5952bba87897",
+      "name": "X25519 private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "keys/asymmetric/x25519.pem"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 256,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:70730d1afdb1",
+      "name": "X448 private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "keys/asymmetric/x448.pem"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 448,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "key:c2abecbba74b",
+      "name": "EC-secp384r1 private-key",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "keystores/app.p12"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "private-key",
+          "size": 384,
+          "format": "PEM/DER"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert:be77e2a1cfc70b55",
+      "name": "CN=p12.ci.test,O=CryptoInventory Test",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "keystores/app.p12"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "certificateProperties": {
+          "subjectName": "CN=p12.ci.test,O=CryptoInventory Test",
+          "issuerName": "CN=p12.ci.test,O=CryptoInventory Test",
+          "notValidBefore": "2026-09-30T06:13:02+00:00",
+          "notValidAfter": "2027-09-30T06:13:02+00:00",
+          "certificateFormat": "X.509",
+          "certificateExtension": "p12"
+        }
+      }
+    }
+  ]
+}

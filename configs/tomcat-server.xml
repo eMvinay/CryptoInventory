@@ -1,0 +1,7 @@
+<!-- TEST FILE - Tomcat TLS connector -->
+<Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol" SSLEnabled="true">
+  <SSLHostConfig protocols="TLSv1.2,TLSv1.3" ciphers="TLS_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384">
+    <Certificate certificateKeystoreFile="conf/app.jks" certificateKeystorePassword="Test@1234"
+                 certificateKeystoreType="JKS" type="RSA"/>
+  </SSLHostConfig>
+</Connector>

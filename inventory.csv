@@ -1,0 +1,115 @@
+path,container,asset_type,subject,issuer,algorithm,key_size,signature_algorithm,not_before,not_after,sha256_fingerprint,findings
+build_inventory.py,,unparsed,,,,,,,,,Unable to load PEM file. See https://cryptography.io/en/latest/faq/#why-can-t-i-
+certificates/pki-chain/client.crt,,certificate,"CN=CI client,O=CryptoInventory Test","CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",RSA,3072,sha256WithRSAEncryption,2026-09-30T06:12:42+00:00,2027-09-30T06:12:42+00:00,16c03a95565512a825f0ed1e4fea1a7c1171953f310788063a7ca22f38e5243e,quantum-vulnerable
+certificates/pki-chain/client.csr,,csr,"CN=CI client,O=CryptoInventory Test",,RSA,3072,,,,,
+certificates/pki-chain/client.key,,private-key,,,RSA,3072,,,,,quantum-vulnerable
+certificates/pki-chain/codesign.crt,,certificate,"CN=CI codesign,O=CryptoInventory Test","CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",RSA,3072,sha256WithRSAEncryption,2026-09-30T06:12:43+00:00,2027-09-30T06:12:43+00:00,acfeeb24462e0652ab2df94f9cca846eda2eeb39c642fab05a04a96d19b9c672,quantum-vulnerable
+certificates/pki-chain/codesign.csr,,csr,"CN=CI codesign,O=CryptoInventory Test",,RSA,3072,,,,,
+certificates/pki-chain/codesign.key,,private-key,,,RSA,3072,,,,,quantum-vulnerable
+certificates/pki-chain/fullchain.pem,,certificate,"CN=app.ci.test,O=CryptoInventory Test,C=IN","CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",RSA,2048,sha256WithRSAEncryption,2026-09-30T06:12:42+00:00,2027-11-01T06:12:42+00:00,d6fae5c44df0bb16350d953d428e1a108e2949134efbafe60e3260cbf2b5c518,quantum-vulnerable
+certificates/pki-chain/fullchain.pem,,certificate,"CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN","CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",RSA,3072,sha256WithRSAEncryption,2026-09-30T06:12:42+00:00,2036-09-27T06:12:42+00:00,15aec483b2167d9617c329013e8f45da5227ebf6458ad60b8b7086c6e92b68ab,quantum-vulnerable; no SAN
+certificates/pki-chain/fullchain.pem,,certificate,"CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN","CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",RSA,4096,sha384WithRSAEncryption,2026-09-30T06:12:41+00:00,2046-09-25T06:12:41+00:00,16ce89fb1ee964d326f02bb76d56e51944659bbb8fe43fff9fc42a10e87e4ad1,quantum-vulnerable; no SAN
+certificates/pki-chain/intermediate-ca.crt,,certificate,"CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN","CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",RSA,3072,sha256WithRSAEncryption,2026-09-30T06:12:42+00:00,2036-09-27T06:12:42+00:00,15aec483b2167d9617c329013e8f45da5227ebf6458ad60b8b7086c6e92b68ab,quantum-vulnerable; no SAN
+certificates/pki-chain/intermediate-ca.csr,,csr,"CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",,RSA,3072,,,,,
+certificates/pki-chain/intermediate-ca.key,,private-key,,,RSA,3072,,,,,quantum-vulnerable
+certificates/pki-chain/root-ca.crt,,certificate,"CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN","CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",RSA,4096,sha384WithRSAEncryption,2026-09-30T06:12:41+00:00,2046-09-25T06:12:41+00:00,16ce89fb1ee964d326f02bb76d56e51944659bbb8fe43fff9fc42a10e87e4ad1,quantum-vulnerable; no SAN
+certificates/pki-chain/root-ca.key,,private-key,,,RSA,4096,,,,,quantum-vulnerable
+certificates/pki-chain/server-rsa2048.crt,,certificate,"CN=app.ci.test,O=CryptoInventory Test,C=IN","CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",RSA,2048,sha256WithRSAEncryption,2026-09-30T06:12:42+00:00,2027-11-01T06:12:42+00:00,d6fae5c44df0bb16350d953d428e1a108e2949134efbafe60e3260cbf2b5c518,quantum-vulnerable
+certificates/pki-chain/server-rsa2048.csr,,csr,"CN=app.ci.test,O=CryptoInventory Test,C=IN",,RSA,2048,,,,,
+certificates/pki-chain/server-rsa2048.key,,private-key,,,RSA,2048,,,,,quantum-vulnerable
+certificates/pki-chain/smime.crt,,certificate,"CN=CI smime,O=CryptoInventory Test","CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",RSA,3072,sha256WithRSAEncryption,2026-09-30T06:12:44+00:00,2027-09-30T06:12:44+00:00,041a4f409d022f7103afc87526c5210fb3999bf21f4ff6068c36398c047ec2ca,quantum-vulnerable
+certificates/pki-chain/smime.csr,,csr,"CN=CI smime,O=CryptoInventory Test",,RSA,3072,,,,,
+certificates/pki-chain/smime.key,,private-key,,,RSA,3072,,,,,quantum-vulnerable
+certificates/crl/i1-der.crl,,crl,,"CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",,,sha256WithRSAEncryption,,2026-10-30T06:12:45+00:00,,
+certificates/crl/i1.crl,,crl,,"CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",,,sha256WithRSAEncryption,,2026-10-30T06:12:45+00:00,,
+certificates/ecdsa/ecdsa-prime256v1.crt,,certificate,"CN=ecdsa-prime256v1.ci.test,O=CryptoInventory Test","CN=ecdsa-prime256v1.ci.test,O=CryptoInventory Test",EC-secp256r1,256,ecdsa-with-SHA256,2026-09-30T06:12:44+00:00,2027-09-30T06:12:44+00:00,00ba0671af62f9802c800d0562d7d4e9a35fa69d570e63f8b0cff6ae526c75d6,quantum-vulnerable
+certificates/ecdsa/ecdsa-prime256v1.key,,private-key,,,EC-secp256r1,256,,,,,quantum-vulnerable
+certificates/ecdsa/ecdsa-secp384r1.crt,,certificate,"CN=ecdsa-secp384r1.ci.test,O=CryptoInventory Test","CN=ecdsa-secp384r1.ci.test,O=CryptoInventory Test",EC-secp384r1,384,ecdsa-with-SHA384,2026-09-30T06:12:44+00:00,2027-09-30T06:12:44+00:00,b042ba53c24fb1bff906defb9ad175b7ede021396643fcf155086b474dfe1c7b,quantum-vulnerable
+certificates/ecdsa/ecdsa-secp384r1.key,,private-key,,,EC-secp384r1,384,,,,,quantum-vulnerable
+certificates/ecdsa/ecdsa-secp521r1.crt,,certificate,"CN=ecdsa-secp521r1.ci.test,O=CryptoInventory Test","CN=ecdsa-secp521r1.ci.test,O=CryptoInventory Test",EC-secp521r1,521,ecdsa-with-SHA512,2026-09-30T06:12:44+00:00,2027-09-30T06:12:44+00:00,74509b038c4d87d35a330186ab23bb204d4ddc1fc11cc399baaf3ebf543da1ba,quantum-vulnerable
+certificates/ecdsa/ecdsa-secp521r1.key,,private-key,,,EC-secp521r1,521,,,,,quantum-vulnerable
+certificates/formats/chain-der.p7b,PKCS#7,certificate,"CN=app.ci.test,O=CryptoInventory Test,C=IN","CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",RSA,2048,sha256WithRSAEncryption,2026-09-30T06:12:42+00:00,2027-11-01T06:12:42+00:00,d6fae5c44df0bb16350d953d428e1a108e2949134efbafe60e3260cbf2b5c518,quantum-vulnerable
+certificates/formats/chain-der.p7b,PKCS#7,certificate,"CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN","CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",RSA,3072,sha256WithRSAEncryption,2026-09-30T06:12:42+00:00,2036-09-27T06:12:42+00:00,15aec483b2167d9617c329013e8f45da5227ebf6458ad60b8b7086c6e92b68ab,quantum-vulnerable; no SAN
+certificates/formats/chain-der.p7b,PKCS#7,certificate,"CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN","CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",RSA,4096,sha384WithRSAEncryption,2026-09-30T06:12:41+00:00,2046-09-25T06:12:41+00:00,16ce89fb1ee964d326f02bb76d56e51944659bbb8fe43fff9fc42a10e87e4ad1,quantum-vulnerable; no SAN
+certificates/formats/chain.p7b,PKCS#7,certificate,"CN=app.ci.test,O=CryptoInventory Test,C=IN","CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",RSA,2048,sha256WithRSAEncryption,2026-09-30T06:12:42+00:00,2027-11-01T06:12:42+00:00,d6fae5c44df0bb16350d953d428e1a108e2949134efbafe60e3260cbf2b5c518,quantum-vulnerable
+certificates/formats/chain.p7b,PKCS#7,certificate,"CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN","CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",RSA,3072,sha256WithRSAEncryption,2026-09-30T06:12:42+00:00,2036-09-27T06:12:42+00:00,15aec483b2167d9617c329013e8f45da5227ebf6458ad60b8b7086c6e92b68ab,quantum-vulnerable; no SAN
+certificates/formats/chain.p7b,PKCS#7,certificate,"CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN","CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",RSA,4096,sha384WithRSAEncryption,2026-09-30T06:12:41+00:00,2046-09-25T06:12:41+00:00,16ce89fb1ee964d326f02bb76d56e51944659bbb8fe43fff9fc42a10e87e4ad1,quantum-vulnerable; no SAN
+certificates/formats/server-aes256.p12,,private-key,,,RSA,2048,,,,,quantum-vulnerable
+certificates/formats/server-aes256.p12,PKCS#12,certificate,"CN=app.ci.test,O=CryptoInventory Test,C=IN","CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",RSA,2048,sha256WithRSAEncryption,2026-09-30T06:12:42+00:00,2027-11-01T06:12:42+00:00,d6fae5c44df0bb16350d953d428e1a108e2949134efbafe60e3260cbf2b5c518,quantum-vulnerable
+certificates/formats/server-aes256.p12,PKCS#12,certificate,"CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN","CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",RSA,3072,sha256WithRSAEncryption,2026-09-30T06:12:42+00:00,2036-09-27T06:12:42+00:00,15aec483b2167d9617c329013e8f45da5227ebf6458ad60b8b7086c6e92b68ab,quantum-vulnerable; no SAN
+certificates/formats/server-aes256.pfx,,private-key,,,RSA,2048,,,,,quantum-vulnerable
+certificates/formats/server-aes256.pfx,PKCS#12,certificate,"CN=app.ci.test,O=CryptoInventory Test,C=IN","CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",RSA,2048,sha256WithRSAEncryption,2026-09-30T06:12:42+00:00,2027-11-01T06:12:42+00:00,d6fae5c44df0bb16350d953d428e1a108e2949134efbafe60e3260cbf2b5c518,quantum-vulnerable
+certificates/formats/server-aes256.pfx,PKCS#12,certificate,"CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN","CN=CI Test Root CA R1,O=CryptoInventory Test,C=IN",RSA,3072,sha256WithRSAEncryption,2026-09-30T06:12:42+00:00,2036-09-27T06:12:42+00:00,15aec483b2167d9617c329013e8f45da5227ebf6458ad60b8b7086c6e92b68ab,quantum-vulnerable; no SAN
+certificates/formats/server-legacy-3des.pfx,,private-key,,,RSA,2048,,,,,quantum-vulnerable
+certificates/formats/server-legacy-3des.pfx,PKCS#12,certificate,"CN=app.ci.test,O=CryptoInventory Test,C=IN","CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",RSA,2048,sha256WithRSAEncryption,2026-09-30T06:12:42+00:00,2027-11-01T06:12:42+00:00,d6fae5c44df0bb16350d953d428e1a108e2949134efbafe60e3260cbf2b5c518,quantum-vulnerable
+certificates/formats/server.cer,,certificate,"CN=app.ci.test,O=CryptoInventory Test,C=IN","CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",RSA,2048,sha256WithRSAEncryption,2026-09-30T06:12:42+00:00,2027-11-01T06:12:42+00:00,d6fae5c44df0bb16350d953d428e1a108e2949134efbafe60e3260cbf2b5c518,quantum-vulnerable
+certificates/formats/server.der,,certificate,"CN=app.ci.test,O=CryptoInventory Test,C=IN","CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",RSA,2048,sha256WithRSAEncryption,2026-09-30T06:12:42+00:00,2027-11-01T06:12:42+00:00,d6fae5c44df0bb16350d953d428e1a108e2949134efbafe60e3260cbf2b5c518,quantum-vulnerable
+certificates/formats/server.pem,,certificate,"CN=app.ci.test,O=CryptoInventory Test,C=IN","CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",RSA,2048,sha256WithRSAEncryption,2026-09-30T06:12:42+00:00,2027-11-01T06:12:42+00:00,d6fae5c44df0bb16350d953d428e1a108e2949134efbafe60e3260cbf2b5c518,quantum-vulnerable
+certificates/csr/client.csr,,csr,"CN=CI client,O=CryptoInventory Test",,RSA,3072,,,,,
+certificates/csr/codesign.csr,,csr,"CN=CI codesign,O=CryptoInventory Test",,RSA,3072,,,,,
+certificates/csr/ec-p256.csr,,csr,"CN=csr-ec.ci.test,O=CryptoInventory Test",,EC-secp256r1,256,,,,,
+certificates/csr/ec-p256.key,,private-key,,,EC-secp256r1,256,,,,,quantum-vulnerable
+certificates/csr/intermediate-ca.csr,,csr,"CN=CI Test Issuing CA I1,O=CryptoInventory Test,C=IN",,RSA,3072,,,,,
+certificates/csr/server-rsa2048.csr,,csr,"CN=app.ci.test,O=CryptoInventory Test,C=IN",,RSA,2048,,,,,
+certificates/csr/smime.csr,,csr,"CN=CI smime,O=CryptoInventory Test",,RSA,3072,,,,,
+certificates/weak/expired.crt,,certificate,"CN=expired.ci.test,O=CryptoInventory Test WEAK","CN=expired.ci.test,O=CryptoInventory Test WEAK",RSA,2048,sha256WithRSAEncryption,2024-07-22T06:12:44+00:00,2026-08-31T06:12:44+00:00,2188ea1b0a81e988fc4cb092f7393c9c724dbbbc27277aa576ec00c8bbb3ee26,quantum-vulnerable; expired; validity >398d
+certificates/weak/expired.key,,private-key,,,RSA,2048,,,,,quantum-vulnerable
+certificates/weak/expiring-in-7-days.crt,,certificate,"CN=expiring-in-7-days.ci.test,O=CryptoInventory Test WEAK","CN=expiring-in-7-days.ci.test,O=CryptoInventory Test WEAK",RSA,2048,sha256WithRSAEncryption,2025-10-07T06:12:44+00:00,2026-10-07T06:12:44+00:00,f85674515c289e7684866c7c083b1400029521741bf27a14754035d9d18bb9d6,quantum-vulnerable; expires <=30d
+certificates/weak/expiring-in-7-days.key,,private-key,,,RSA,2048,,,,,quantum-vulnerable
+certificates/weak/long-validity-10y.crt,,certificate,"CN=long-validity-10y.ci.test,O=CryptoInventory Test WEAK","CN=long-validity-10y.ci.test,O=CryptoInventory Test WEAK",RSA,2048,sha256WithRSAEncryption,2026-09-30T06:12:44+00:00,2036-09-27T06:12:44+00:00,17c8b2f08e049528581be045c5e96f30f76acc8d89fddae86e3816ad489d5654,quantum-vulnerable; validity >398d
+certificates/weak/long-validity-10y.key,,private-key,,,RSA,2048,,,,,quantum-vulnerable
+certificates/weak/md5-signed.crt,,certificate,"CN=md5.ci.test,O=CryptoInventory_Test_WEAK","CN=md5.ci.test,O=CryptoInventory_Test_WEAK",RSA,2048,md5WithRSAEncryption,2026-09-30T06:12:44+00:00,2027-09-30T06:12:44+00:00,537dd118d528b9387758cfbfa0cc79a1b436c6477ab338add22fa50c1fc2e414,weak signature md5WithRSAEncryption; quantum-vulnerable; no SAN
+certificates/weak/md5-signed.key,,private-key,,,RSA,2048,,,,,quantum-vulnerable
+certificates/weak/no-san.crt,,certificate,"CN=no-san.ci.test,O=CryptoInventory Test WEAK","CN=no-san.ci.test,O=CryptoInventory Test WEAK",RSA,2048,sha256WithRSAEncryption,2026-09-30T06:12:44+00:00,2027-09-30T06:12:44+00:00,82510432e303e3ed926b8cb2afe9bf11a79a573c2db6049252615d74b6068740,quantum-vulnerable; no SAN
+certificates/weak/no-san.key,,private-key,,,RSA,2048,,,,,quantum-vulnerable
+certificates/weak/not-yet-valid.crt,,certificate,"CN=not-yet-valid.ci.test,O=CryptoInventory Test WEAK","CN=not-yet-valid.ci.test,O=CryptoInventory Test WEAK",RSA,2048,sha256WithRSAEncryption,2026-10-30T06:12:44+00:00,2027-11-04T06:12:44+00:00,ecee1b32da61a614736908290fdde45e15dfe16c1e6280bb13208a7115ec1287,quantum-vulnerable; not yet valid
+certificates/weak/not-yet-valid.key,,private-key,,,RSA,2048,,,,,quantum-vulnerable
+certificates/weak/rsa1024.crt,,certificate,"CN=rsa1024.ci.test,O=CryptoInventory_Test_WEAK","CN=rsa1024.ci.test,O=CryptoInventory_Test_WEAK",RSA,1024,sha256WithRSAEncryption,2026-09-30T06:12:44+00:00,2027-09-30T06:12:44+00:00,386c429b05a9685791e1e1edbf8274b99b0a68c2c4da237b8a9d11c2a43c13e3,RSA-1024 too small; quantum-vulnerable; no SAN
+certificates/weak/rsa1024.key,,private-key,,,RSA,1024,,,,,RSA-1024 too small; quantum-vulnerable
+certificates/weak/sha1-signed.crt,,certificate,"CN=sha1.ci.test,O=CryptoInventory_Test_WEAK","CN=sha1.ci.test,O=CryptoInventory_Test_WEAK",RSA,2048,sha1WithRSAEncryption,2026-09-30T06:12:44+00:00,2027-09-30T06:12:44+00:00,7a0fa17d4cafb6df331549961a00e1b456931ed1c39b5c5726d2172508892aca,weak signature sha1WithRSAEncryption; quantum-vulnerable; no SAN
+certificates/weak/sha1-signed.key,,private-key,,,RSA,2048,,,,,quantum-vulnerable
+certificates/weak/wildcard.crt,,certificate,"CN=*.ci.test,O=CryptoInventory Test WEAK","CN=*.ci.test,O=CryptoInventory Test WEAK",RSA,2048,sha256WithRSAEncryption,2026-09-30T06:12:44+00:00,2027-09-30T06:12:44+00:00,01a9f7463445be9518d181c8c23701fb37c5e488cdafb3646128154a7a050ff7,quantum-vulnerable
+certificates/weak/wildcard.key,,private-key,,,RSA,2048,,,,,quantum-vulnerable
+certificates/eddsa/ed25519.crt,,certificate,"CN=ed25519.ci.test,O=CryptoInventory Test","CN=ed25519.ci.test,O=CryptoInventory Test",Ed25519,256,ed25519,2026-09-30T06:12:44+00:00,2027-09-30T06:12:44+00:00,1772bee4ec331b6600332ff8addb2cb6560291281b1a524f0fc60618a23ef67f,quantum-vulnerable; no SAN
+certificates/eddsa/ed25519.key,,private-key,,,Ed25519,256,,,,,quantum-vulnerable
+certificates/eddsa/ed448.crt,,certificate,"CN=ed448.ci.test,O=CryptoInventory Test","CN=ed448.ci.test,O=CryptoInventory Test",Ed448,456,ed448,2026-09-30T06:12:44+00:00,2027-09-30T06:12:44+00:00,e6827a7a3250933bfc812fc5137554e94e40d547358813464111539c189b0d5f,quantum-vulnerable; no SAN
+certificates/eddsa/ed448.key,,private-key,,,Ed448,456,,,,,quantum-vulnerable
+ssh/authorized_keys,,public-key,,,RSA,3072,,,,,quantum-vulnerable
+ssh/id_ecdsa,,private-key,,,EC-secp256r1,256,,,,,quantum-vulnerable
+ssh/id_ecdsa.pub,,public-key,,,EC-secp256r1,256,,,,,quantum-vulnerable
+ssh/id_ed25519,,private-key,,,Ed25519,256,,,,,quantum-vulnerable
+ssh/id_ed25519.pub,,public-key,,,Ed25519,256,,,,,quantum-vulnerable
+ssh/id_rsa,,private-key,,,RSA,3072,,,,,quantum-vulnerable
+ssh/id_rsa.pub,,public-key,,,RSA,3072,,,,,quantum-vulnerable
+ssh/id_rsa1024_WEAK,,private-key,,,RSA,1024,,,,,RSA-1024 too small; quantum-vulnerable
+ssh/id_rsa1024_WEAK.pub,,public-key,,,RSA,1024,,,,,RSA-1024 too small; quantum-vulnerable
+pgp/ci-test-private.asc,,pgp-key,,,,,,,,,parse with gpg
+pgp/ci-test-public.asc,,pgp-key,,,,,,,,,parse with gpg
+keys/symmetric/3des-WEAK.key.hex,,secret-key,,,3DES-WEAK,,,,,,WEAK algorithm
+keys/symmetric/aes128.key.hex,,secret-key,,,AES128,,,,,,
+keys/symmetric/aes256.key.bin,,secret-key,,,AES256,,,,,,
+keys/symmetric/aes256.key.hex,,secret-key,,,AES256,,,,,,
+keys/symmetric/chacha20.key.hex,,secret-key,,,CHACHA20,,,,,,
+keys/symmetric/des-WEAK.key.hex,,secret-key,,,DES-WEAK,,,,,,WEAK algorithm
+keys/symmetric/hmac-sha256-secret.b64,,secret-key,,,HMAC-SHA256-SECRET,,,,,,
+keys/symmetric/sample-aes256-cbc.enc,,secret-key,,,SAMPLE-AES256-CBC,,,,,,
+keys/asymmetric/dh1024-WEAK.pem,,dh-parameters,,,DH,1024,,,,,DH-1024 too small; quantum-vulnerable
+keys/asymmetric/dh2048.pem,,dh-parameters,,,DH,2048,,,,,quantum-vulnerable
+keys/asymmetric/dsa1024-WEAK.pem,,private-key,,,DSA,1024,,,,,DSA-1024 too small; quantum-vulnerable
+keys/asymmetric/ec-p256-sec1.pem,,private-key,,,EC-secp256r1,256,,,,,quantum-vulnerable
+keys/asymmetric/ec-secp256k1.pem,,private-key,,,EC-secp256k1,256,,,,,quantum-vulnerable
+keys/asymmetric/ed25519.pem,,private-key,,,Ed25519,256,,,,,quantum-vulnerable
+keys/asymmetric/rsa2048-pkcs1.pem,,private-key,,,RSA,2048,,,,,quantum-vulnerable
+keys/asymmetric/rsa2048-pkcs8-encrypted.pem,,private-key,,,RSA,2048,,,,,quantum-vulnerable
+keys/asymmetric/rsa2048-pkcs8.der,,private-key,,,RSA,2048,,,,,quantum-vulnerable
+keys/asymmetric/rsa2048-pkcs8.pem,,private-key,,,RSA,2048,,,,,quantum-vulnerable
+keys/asymmetric/rsa2048-public-pkcs1.pem,,public-key,,,RSA,2048,,,,,quantum-vulnerable
+keys/asymmetric/rsa2048-public.pem,,public-key,,,RSA,2048,,,,,quantum-vulnerable
+keys/asymmetric/rsa4096-traditional-encrypted.pem,,private-key,,,RSA,4096,,,,,quantum-vulnerable
+keys/asymmetric/x25519.pem,,private-key,,,X25519,256,,,,,quantum-vulnerable
+keys/asymmetric/x448.pem,,private-key,,,X448,448,,,,,quantum-vulnerable
+keystores/app.jks,,java-keystore,,,,,,,,,inspect with keytool
+keystores/app.p12,,private-key,,,EC-secp384r1,384,,,,,quantum-vulnerable
+keystores/app.p12,PKCS#12,certificate,"CN=p12.ci.test,O=CryptoInventory Test","CN=p12.ci.test,O=CryptoInventory Test",EC-secp384r1,384,ecdsa-with-SHA384,2026-09-30T06:13:02+00:00,2027-09-30T06:13:02+00:00,be77e2a1cfc70b552bd49d3ad17a486c0200aa8388c623d17f07583fb42abf9a,quantum-vulnerable; no SAN
+keystores/secrets.jceks,,java-keystore,,,,,,,,,inspect with keytool
+keystores/truststore.jks,,java-keystore,,,,,,,,,inspect with keytool
